@@ -1,12 +1,24 @@
 Change Log
 ==========
 
-Version 1.4.0 *(In Development)*
---------------------------------
+Version 1.3.5 *(2014-06-09)*
+----------------------------
 
- * Rename `ThreadEnforcer.ANY` to `ThreadEnforcer.NONE` which better reflects
-   its behavior.
+ * Fix: Ignore synthetic bridge methods created by JDK 8.
+
+
+Version 1.3.4 *(2013-06-24)*
+----------------------------
+
+ * Explicitly disallow `null` argument to `register`, `unregister`, and `post`.
+
+
+Version 1.3.3 *(2013-02-18)*
+----------------------------
+
  * Explicitly disallow `void` return type on `@Produce` methods.
+ * Avoid producers and subscribers being called after unregistering from
+   inside a subscribe method.
 
 
 Version 1.3.2 *(2012-10-16)*
